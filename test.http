@@ -1,0 +1,10 @@
+### 회원가입 테스트
+
+POST http://localhost:5001/api/signup
+Content-Type: application/json
+
+{
+  "email": "test@example.com",
+  "username": "testuser",
+  "password": "password123"
+}
