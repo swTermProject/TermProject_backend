@@ -14,8 +14,7 @@ app = Flask(__name__)
 #softwareengineering SHA256 Hashing
 app.config['SECRET_KEY'] = 'dd7806c6d3a20b248454a0565951c0fd8212277c34e0439d758b85ff3a3b9e77'
 
-# 프론트엔드 실행 경로 따라 변경
-CORS(app, resources={r"/api/*": {"origins": "http://localhost:5174"}}, supports_credentials=True)
+CORS(app, resources={r"/api/*": {"origins": "http://localhost:5173"}}, supports_credentials=True)
 
 
 @app.before_request
